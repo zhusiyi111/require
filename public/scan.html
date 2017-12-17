@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>浏览页</title>
+</head>
+<body>
+<button id="btn">点我加载e</button>
+</body>
+<script type="text/javascript" src="./dist/JModule.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.js"></script>
+<script src="http://localhost:3001/dist/??c.js,b.js,a.js"></script>
+<script src="http://localhost:3001/dist/requireList.js"></script>
+<script type="text/javascript">
+
+
+
+
+$('#btn').click(function(){
+	var e = J_Module.use('e');
+	e.then(function(e){
+		e();
+	})
+})
+
+</script>
+
+</html>
