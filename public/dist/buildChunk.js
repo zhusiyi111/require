@@ -1,5 +1,3 @@
-/*! 这是一个注释头 */
-var zhusiyi =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -62,17 +60,28 @@ var zhusiyi =
 /******/ 	__webpack_require__.p = "http://localhost:3001/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 7:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open 'C:\\Project\\require\\public\\src\\getRequireList.js'\n    at Error (native)");
+
+	/*moduleName:*/
+	/*require:*/
+	
+// function define(){
+// 	import(/* webpackChunkName: "a" */'./chunk/a');
+// 	import(/* webpackChunkName: "b" */'./chunk/b');
+// 	import(/* webpackChunkName: "c" */'./chunk/c');
+// 	import(/* webpackChunkName: "d" */'./chunk/d');
+// 	import(/* webpackChunkName: "e" */'./chunk/e');
+// 	import(/* webpackChunkName: "f" */'./chunk/f');
+// }
+
+
 
 /***/ })
-
-/******/ });
-//# sourceMappingURL=getRequireList.js.map
+/******/ ]);
+//# sourceMappingURL=buildChunk.js.map

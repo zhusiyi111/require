@@ -1,4 +1,3 @@
-var zhusiyi =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -61,31 +60,29 @@ var zhusiyi =
 /******/ 	__webpack_require__.p = "http://localhost:3001/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 6:
+/***/ 10:
 /***/ (function(module, exports) {
 
 
 	/*moduleName:f*/
 	/*require:*/
 	
-    
 
-J_Module.define('f',function(){
+J_Module.define('f',[],function(){
 
-
+	
 	function f(){
 
-		
+
 		console.log('我是f');
 	}
-	
-	return f;
 
+	return f;
 })
 
 

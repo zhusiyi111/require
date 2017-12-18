@@ -54,10 +54,12 @@ FileListPlugin.prototype.apply = function(compiler) {
 
 function getModuleRequire(code){
     var require = code.match(/\/\*require:([^*]+)\*\//);
+
     if(!require || !require.length){
         return [];
     }
     require = require[1];
+
     if(require){
         require = require.split(',');
     }else{
@@ -67,14 +69,13 @@ function getModuleRequire(code){
 }
 
 function getModuleName(code){
-    var moduleName = code.match(/\/\*moduleName:([\w]+)\*\//);
+    var moduleName = code.match(/\/\*moduleName:([^\*]*)\*\//);
 
     if(moduleName){
         moduleName = moduleName[1]
     }else{
         moduleName = '';
     }
-
     return moduleName;
 }
 

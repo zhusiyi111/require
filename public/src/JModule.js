@@ -2,8 +2,27 @@
 	J_Module.module = {};
 
 
-	J_Module.define = function(name,value){
+	J_Module.define = function(name,require,value){
 		J_Module.module[name] = value();
+	}
+
+	J_Module.includes = function(name){
+		if(J_Module.module[name]){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	J_Module.require = function(name){
+		var module = J_Module.module[name];
+		if(module){
+			return module;
+		}else{
+			console.warn(name+'还未加载')
+			return;
+		}
+		 
 	}
 
 	J_Module.use = function(name){
@@ -18,15 +37,6 @@
 			}
 
 		})	
-	}
-
-	J_Module.syncUse = function(name){
-		if(J_Module.module[name]){
-			return J_Module.module[name]
-		}else{
-			console.warn(name+'还没被加载')
-			return;
-		}	
 	}
 
 	J_Module.load = function(module){

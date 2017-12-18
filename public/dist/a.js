@@ -1,4 +1,3 @@
-var zhusiyi =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -61,26 +60,26 @@ var zhusiyi =
 /******/ 	__webpack_require__.p = "http://localhost:3001/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 5:
 /***/ (function(module, exports) {
 
 
 	/*moduleName:a*/
 	/*require:b,c*/
 	
-    
 
-J_Module.define('a',function(){
+J_Module.define('a',['b','c'],function(){
 
-	var b = J_Module.syncUse('b');
-	var c = J_Module.syncUse('c');
+	var b = J_Module.require('b'),
+		c = J_Module.require('c');
+	
 
 	c();
-	
 
 	function a(){
 
@@ -88,11 +87,7 @@ J_Module.define('a',function(){
 
 		console.log('我是a');
 	}
-
-
 	return a;
-
-
 })
 
 
@@ -100,5 +95,6 @@ J_Module.define('a',function(){
 
 
 /***/ })
-/******/ ]);
+
+/******/ });
 //# sourceMappingURL=a.js.map

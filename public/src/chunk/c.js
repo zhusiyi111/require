@@ -1,18 +1,15 @@
 
 
-J_Module.define('c',function(){
+J_Module.define('c',[],function(){
 
 	
-
-
 	function c(){
 
-		
+
 		console.log('我是c');
 	}
-	
-	return c;
 
+	return c;
 })
 
 

@@ -1,6 +1,16 @@
 
-import '../b'
 
-console.log('e')
+J_Module.define('e',['f'],function(){
 
-window.module.e = {};
+	
+	function e(){
+
+
+		console.log('我是e');
+	}
+
+	return e;
+})
+
+
+
